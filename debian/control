@@ -1,0 +1,11 @@
+Source: pysodium
+Section: contrib/net
+Priority: extra
+Maintainer: UBNT Package Maintainers <maintainers@ubnt.com>
+Build-Depends: debhelper (>= 5), python2.7
+Standards-Version: 3.7.2
+
+Package: pysodium
+Architecture: all
+Depends: libsodium23 (>= 1.0.16)
+Description: Simple wrapper around libsodium masquerading as nacl.

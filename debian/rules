@@ -1,0 +1,15 @@
+#!/usr/bin/make -f
+
+export DH_VERBOSE=1
+
+override_dh_auto_build:
+	python2.7 setup.py build --force
+
+override_dh_auto_install:
+	python2.7 setup.py install --force --root=$(CURDIR)/debian/pysodium --no-compile -O0 --install-layout=deb
+
+override_dh_auto_clean:
+	unset CC; python2.7 setup.py clean -a
+
+%:
+	dh  $@

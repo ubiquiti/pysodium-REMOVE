@@ -1,0 +1,5 @@
+pysodium (0.7.0) unstable; urgency=medium
+
+  * Initial release.
+
+ -- Logan Odell <logan.odell@ubnt.com>  Mon, 28 May 2018 11:46:43 -0700
